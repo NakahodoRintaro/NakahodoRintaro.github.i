@@ -7,7 +7,16 @@
     <a-scene id=“scene” background=“color: #000000”>
         <a-sky src="1niu1cmc-a-close-up-of-a-water-fountain.jpeg">
         </a-sky>
-          <a-text position="-1 1.25 -3" value="Hello, World!" color="black"></a-text>
+        <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">
+          <a-text
+            value="こらまつり！"
+            font="custom-msdf.json"
+            font-image="custom-msdf.png"
+            negate="false"
+            scale="2 2 1"
+            position="0 1 -4"
+            color="red">
+          </a-text>
           <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000ff" shadow></a-box>
           <a-box position="-1 0.5 -3" rotation="0 45 0" color="#dc143c"></a-box>
           <a-sphere position="0 1.25 -5" radius="1.25" color="#008080"></a-sphere>
